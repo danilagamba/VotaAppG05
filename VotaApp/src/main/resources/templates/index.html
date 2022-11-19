@@ -1,0 +1,93 @@
+<htmlxmlns="http: //www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+	<head>
+		<title>VotaApp</title>
+		<meta charset="utf-8" contente="Aplicacion web para  registro  de  votos">
+		<link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}">
+		<link rel="stylesheet" type="text/css" th:href="@{/css/myStyle.css}">
+	</head>
+
+	<body>
+		<header id="cabeza">
+			<h1>Elecciones 2022 en Colombia</h1>
+			<img th:src="@{/img/fondo 1.jpg}" style="width:750px; display:block; margin:auto;">
+		</header>
+		<nav id="menu">
+			<ul id="opciones">
+				<li><a th:href="@{/index}">Inicio</a></li>
+				<li><a th:href="@{/index}">Opcion 1</a></li>
+				<li><a th:href="@{/index}">Opcion 2</a></li>
+				<li><a th:href="@{/index}">Opcion 3</a></li>
+			</ul>
+		</nav>
+		<aside id="izq">
+			<p>
+				votaciones
+			</p>
+			<table class="table">
+				<thead>
+					<tr>
+						<th secope="col">Candidato 1</th>
+						<th secope="col">Candidato 2</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<img th:src="@{/img/persona 1.jpg}" class="forImg">
+							<p>
+								texto descripcion
+							</p>
+						</td>
+						<td>
+							<img th:src="@{/img/persona 2.jpg}" class="forImg">
+							<p>
+								texto descripcion
+							</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="table">
+				<thead>
+					<tr>
+						<th secope="col">Candidato 3</th>
+						<th secope="col">Candidato 4</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<img th:src="@{/img/persona 6.jpeg}" class="forImg">
+							<p>
+								texto descripcion
+							</p>
+						</td>
+						<td>
+							<img th:src="@{/img/persona 5.jpg}" class="forImg">
+							<p>
+								texto descripcion
+							</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+		</aside>
+		<section id="der">
+			<p>
+				<img th:src="@{/img/estadisticas.jpg}" style="width:400px; display:block; margin:auto;">
+			</p>
+			<p align="center">
+				<button type="button" class="btn btn-outline-warning" style="width:200px;height:60px;">Votos por Candidato</button><br>
+				<button type="button" class="btn btn-outline-primary" style="width:200px;height:60px;">Votos por Regiones</button><br>
+				<button type="button" class="btn btn-outline-danger" style="width:200px;height:60px;">Resultados consolidados </button><br>
+
+			</p>
+		</section>
+	</body>
+
+	</html>
